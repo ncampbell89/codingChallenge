@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>Stamp</h1>
+
+    <ul id="nav">
+      <li><a href="#">About</a></li>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#">Integration</a></li>
+      <li><a href="#">Contacts</a></li>
+    </ul> 
+    
+    <label id="burger" onClick="toggleMenu()">&#9776;</label>
+    <ul id="mobileMenu">
+      <li><a href="#">About</a></li>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#">Integration</a></li>
+      <li><a href="#">Contacts</a></li>
+    </ul>
+    
+  </header>
+  
+  <script>
+    const burger = document.getElementById('burger');
+    const menu = document.getElementById('mobileMenu');
+      
+    function toggleMenu() {
+      if(menu.style.display == 'flex') {
+        menu.style.display = 'none'
+      } else {
+        menu.style.display = 'flex'
+      }
+    }
+
+  </script>
+  
+  <main>
+    <div id="about">
+      <h1>Simple Way to<br> Organize Your<br> Inspirations</h1>
+      <p>I think what motivates people is not great hate,<br> but great love for other people.</p>
+    </div>
+    
+    <div id="signup">
+      <p>Sign up for free</p>
+      
+      <div id="fillin">
+        <input type="text" placeholder="Name" />
+        <hr>
+        <input type="email" placeholder="Email" />
+        <hr>
+        <input type="password" placeholder="Password" />
+        <button>Sign Up &gt;</button>
+      </div>
+      
+      <p>By clicking "Sign up" I agree to our<br><span style="color:#FFF">Terms of Service</span></p>
+      
+    </div>
+  </main>
+  
+  <footer>
+    <p>&copy; 2016 Stamp. All Rights Reserved</p>
+    <ul>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Help</a></li>
+      <li><a href="#">Terms of use</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+    </ul>
+  </footer>
+  
+</body>
+  
+</html>
